@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:web/constants/app_colors.dart';
+import 'package:web/utils/constant.dart';
+import 'package:web/utils/custom_image.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -15,6 +17,7 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
     return Stack(
       children: [
         Positioned.fill(
@@ -76,11 +79,12 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
 
+                ///Pizza Menu Section
                 Container(
-                  height: size.height,
-                  width: size.width,
+                  // height: size.height,
+                  // width: size.width,
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       SizedBox(height: 50,),
                       Container(
@@ -115,8 +119,21 @@ class _HomeViewState extends State<HomeView> {
                             ),
                           ],
                         ),
-                      )
-                    ],
+                      ),
+
+                      Container(
+                        alignment: Alignment.centerRight,
+                        child: Column(
+                          children: List.generate(homeImagesList.length, (index){
+                            if(index%2==0){
+                              return leftImageAndRightText(index);
+                            }else{
+                              return rightImageAndLeftText(index);
+                            }
+                          })
+                        ),
+                      ),
+                    ]
                   ),
                 ),
 
@@ -127,4 +144,41 @@ class _HomeViewState extends State<HomeView> {
       ],
     );
   }
+
+
+  leftImageAndRightText(index){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        CustomImage(path: "${homeImagesList[index]["image"]}",height: MediaQuery.of(context).size.height * 0.8),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("${homeImagesList[index]["title"]}",),
+            Text("${homeImagesList[index]["desc"]}",),
+            Text("${homeImagesList[index]["reg_price"]}",),
+            Text("${homeImagesList[index]["mid_size"]}",),
+          ],
+        )
+      ],
+    );
+  }
+  rightImageAndLeftText(index){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("${homeImagesList[index]["title"]}",),
+            Text("${homeImagesList[index]["desc"]}",),
+            Text("${homeImagesList[index]["reg_price"]}",),
+            Text("${homeImagesList[index]["mid_size"]}",),
+          ],
+        ),
+        CustomImage(path: "${homeImagesList[index]["image"]}",height: MediaQuery.of(context).size.height * 0.8,)
+      ],
+    );
+  }
+
 }

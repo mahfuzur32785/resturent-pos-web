@@ -66,132 +66,22 @@ navTextStyle({Color color = Colors.white}) {
   return TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: color);
 }
 
-final myItemSortListData = [
-  {"name": "New Listings", "value": "latest"},
-  {"name": "Old Listings", "value": "oldest"},
-  {"name": "Price: Low to High", "value": "low_to_high"},
-  {"name": "Price: High to Low", "value": "high_to_low"},
-];
-
-final countryListData = [
-  "Canada",
-  "Bangladesh",
-  "South Afrika",
-  "United State"
-];
-
-final dropDownListData = [
-  {"title": "+5km", "value": "5"},
-  {"title": "+10km", "value": "10"},
-  {"title": "+15km", "value": "15"},
-  {"title": "+30km", "value": "30"},
-  {"title": "+50km", "value": "50"},
-  {"title": "+150km", "value": "150"},
-];
-
-final scrollTabList = [
-  "electronic",
-  "property",
-  "service",
-  "pets & animal",
-  "vehicle",
-  "Education",
-  "Job"
-];
-
-final categoryList = [
-  "Event, Travel & Hotel",
-  "Education & related services",
-  "Industrial & business to business",
-  "Jobs offer/Looking for a job"
-];
-
-const fuelTypeList = [
-  {"name": "diesel"},
-  {"name": "petrol"},
-  {"name": "cng"},
-  {"name": "hybrid"},
-  {"name": "electric"},
-  {"name": "octane"},
-  {"name": "lpg"},
-  {"name": "other"}
-];
-
-const vehicleBodyTypeList = [
-  "Saloon",
-  "Hatchback",
-  "Estate",
-  "Convertible",
-  "Coupe/Sports",
-  "SUV/4X4",
-  "MVP",
-  "Others"
-];
-const ramList = [
-  "1 GB",
-  "2 GB",
-  "3 GB",
-  "4 GB",
-  "6 GB",
-  "8 GB",
-  "16 GB & Above"
-];
-const propertySizeList = [
-  "sqft",
-  "katha",
-  "bigha",
-  "acres",
-  "shotok",
-  "decimal"
-];
-const propertyPriceList = [
-  "total price",
-  "per sqft",
-  "per katha",
-  "per bigha",
-  "per acres",
-  "per shotok",
-  "per decimal"
-];
-const jobTypeList = ["Full Time", "Part Time", "Contractual", "Internship"];
-
-final statusTypeList = [
-  {"title": "Deactive", "value": "pending"},
-  {"title": "Sold", "value": "sold"},
-];
-final statusTypeEditList = [
-  {"title": "Deactive", "value": "pending"},
-  {"title": "Sold", "value": "sold"},
-];
-
-const educationList = [
-  "Primary School",
-  "Secondary School",
-  "SSC / O level",
-  "HSC / A level",
-  "Diploma",
-  "Honors / BBA",
-  "Masters / MBA",
-  "phD / Doctorate"
-];
-const noCommonFieldList = [2, 7, 10, 25, 26];
-
-const reasonTypeList = [
-  {"id": "1", "name": "Item sold/unavailable"},
-  {"id": "2", "name": "Fraud"},
-  {"id": "3", "name": "Duplicate"},
-  {"id": "4", "name": "Spam"},
-  {"id": "5", "name": "Wrong category"},
-  {"id": "6", "name": "Offensive"},
-  {"id": "7", "name": "Other"},
-];
 
 /// Project needs ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 const guestList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "Custom"];
 
 List imagesList = [
   {"image": "assets/images/image_2.jpg"},
   {"image": "assets/images/image_3.jpg"}
+];
+
+List homeImagesList = [
+  {"image": "assets/images/pizza1.jpg","title":"Margherita", "desc": "Tomato sauce, Mozzarella cheese, oregano and fresh basil.", "reg_price": "29", "mid_size": "35"},
+  {"image": "assets/images/pizza2.jpg", "title": "Classic Burrata", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},
+  {"image": "assets/images/pizza2.jpg", "title": "Capricciosa", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},
+  {"image": "assets/images/pizza2.jpg", "title": "Siciliana", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},
+
 ];
 
 List<ProductModel> productsList = [

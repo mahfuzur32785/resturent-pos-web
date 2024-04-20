@@ -77,7 +77,7 @@ List imagesList = [
 ];
 
 List homeImagesList = [
-  {"image": "assets/images/pizza1.jpg","title":"Margherita", "desc": "Tomato sauce, Mozzarella cheese, oregano and fresh basil.", "reg_price": "29", "mid_size": "35"},
+  // {"image": "assets/images/pizza1.jpg","title":"Margherita", "desc": "Tomato sauce, Mozzarella cheese, oregano and fresh basil.", "reg_price": "29", "mid_size": "35"},
   {"image": "assets/images/pizza2.jpg", "title": "Classic Burrata", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},
   {"image": "assets/images/pizza2.jpg", "title": "Capricciosa", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},
   {"image": "assets/images/pizza2.jpg", "title": "Siciliana", "desc": "Tomato sauce, Burrata, Parmesan & mozzarella cheese, Fresh Arugula. Ricotta cheese and fresh basil pesto.", "reg_price": "29", "mid_size": "35"},

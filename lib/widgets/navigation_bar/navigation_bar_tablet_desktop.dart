@@ -34,7 +34,7 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           //     ),
           //   ],
           // ),
-          color: Colors.transparent,
+          color: Colors.black,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             // crossAxisAlignment: CrossAxisAlignment.center,
@@ -138,7 +138,7 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             ],
           ),
         ),
-        Divider(color: Colors.white, thickness: 0.2,)
+        // Divider(color: Colors.white, thickness: 0.2,)
       ],
     );
   }

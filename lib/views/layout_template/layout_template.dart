@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:web/locator.dart';
@@ -25,21 +26,25 @@ class LayoutTemplate extends StatelessWidget {
               : null,
           backgroundColor: Colors.white,
           body: CenteredView(
-            child: Stack(
+            child: Column(
               // alignment: Alignment.center,
               // clipBehavior: Clip.none,
               children: <Widget>[
-                Navigator(
-                  key: locator<NavigationService>().navigatorKey,
-                  onGenerateRoute: generateRoute,
-                  initialRoute: HomeRoute,
+                NavigationBarr(scaffoldKey: scaffoldKey),
+                Expanded(
+                  child: Navigator(
+                    key: locator<NavigationService>().navigatorKey,
+                    onGenerateRoute: generateRoute,
+                    initialRoute: HomeRoute,
+                  ),
                 ),
-                Positioned(
-                  top: 10,
-                  left: 0,
-                  right: 0,
-                  child: NavigationBarr(scaffoldKey: scaffoldKey),
-                )
+                // Positioned(
+                //   top: 10,
+                //   left: 0,
+                //   right: 0,
+                //   child: NavigationBarr(scaffoldKey: scaffoldKey),
+                // ),
+
               ],
             ),
           ),

@@ -40,28 +40,28 @@ class CustomTextField extends StatelessWidget {
       maxLines: maxLine ?? 1,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.white,
+        fillColor: Colors.transparent,
         hintText: text,
         contentPadding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
         border: const OutlineInputBorder(
-          borderSide: BorderSide(width: 1, color: Colors.black),
+          borderSide: BorderSide(width: 0.5, color: Colors.white),
         ),
         focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(width: 1, color: Colors.black),
+          borderSide: BorderSide(width: 0.5, color: Colors.white),
         ),
         enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(width: 1, color: Colors.black),
+          borderSide: BorderSide(width: 0.5, color: Colors.white),
         ),
         errorBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(4)),
             borderSide: BorderSide(
-              width: 1,
+              width: 0.5,
               color: Colors.red,
             )),
         focusedErrorBorder: const UnderlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(4)),
           borderSide: BorderSide(
-            width: 1,
+            width: 0.5,
             color: Colors.red,
           ),
         ),

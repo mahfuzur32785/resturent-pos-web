@@ -36,7 +36,7 @@ class _HomeContentDesktopState extends State<ReservationContentDesktop> {
         children: [
           Container(
             // width: 1200,
-            padding: const EdgeInsets.only(top: 50, bottom: 50, left: 16, right: 16),
+            padding: const EdgeInsets.only(top: 50, bottom: 100, left: 16, right: 16),
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage(

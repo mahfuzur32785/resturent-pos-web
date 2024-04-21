@@ -567,15 +567,15 @@ class _HomeViewState extends State<HomeView> {
                                   Flexible(
                                     child: Image.asset(
                                       "assets/images/oursalfe.jpg",
-                                      height: 450,
+                                      height: 400,
                                     ),
                                   ),
                                   // SizedBox(height: 30),
-                                  Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                                  Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
                                   Flexible(
                                     child: Image.asset(
                                       "assets/images/oursalfes.jpg",
-                                      height: 450,
+                                      height: 400,
                                     ),
                                   ),
                                   Padding(padding: EdgeInsets.symmetric(horizontal: 20)),
@@ -592,7 +592,7 @@ class _HomeViewState extends State<HomeView> {
                                                   style: TextStyle(
                                                       color: yellowColor,
                                                       fontWeight: FontWeight.bold,
-                                                      fontSize: 24)),
+                                                      fontSize: 20)),
                                             ),
                                             Container(
                                               height: 1,
@@ -608,7 +608,7 @@ class _HomeViewState extends State<HomeView> {
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.bold,
-                                                  fontSize: 50,
+                                                  fontSize: 40,
                                               ),
                                           ),
                                         ),
@@ -661,8 +661,8 @@ class _HomeViewState extends State<HomeView> {
                 SliverPadding(
                   padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.05),
                   sliver: SliverToBoxAdapter(
-                    child: Footer(),
-                  ),
+                    child: Footer()
+                  )
                 )
               ]),
             ],
